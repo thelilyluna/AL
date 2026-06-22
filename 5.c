@@ -66,8 +66,8 @@ void worst(int arr[], int beg, int end)
         worst(b, mid + 1, end);
         for (i = 0; i < n1; i++)
             arr[i] = a[i];
-        for (j = i; j < n2; j++)
-            arr[j + 1] = b[j];
+        for (j = 0; j < n2; j++)
+            arr[j + 1] = b[j+n1];
     }
 }
 
